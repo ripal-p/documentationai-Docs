@@ -35,42 +35,6 @@
             ]
           },
           {
-            "group": "Components",
-            "icon": "layers",
-            "pages": [
-              {
-                "title": "Images",
-                "path": "components/images",
-                "icon": "image"
-              },
-              {
-                "title": "Cards",
-                "path": "components/cards",
-                "icon": "square"
-              },
-              {
-                "title": "Code",
-                "path": "components/code",
-                "icon": "code"
-              },
-              {
-                "title": "Callouts",
-                "path": "components/callouts",
-                "icon": "message-square"
-              },
-              {
-                "title": "Steps",
-                "path": "components/steps",
-                "icon": "list-ordered"
-              },
-              {
-                "title": "Tabs",
-                "path": "components/tabs",
-                "icon": "columns"
-              }
-            ]
-          },
-          {
             "group": "Account",
             "pages": [
               {
@@ -137,7 +101,7 @@
                 "icon": "hard-hat"
               },
               {
-                "title": "Roadside Assistance",
+                "title": "Roadside assistance",
                 "path": "roadside-assistance",
                 "icon": "shield-user"
               },
@@ -263,8 +227,14 @@
     "actions": {
       "primary": {
         "title": "Book now",
-        "link": "https://motionrental.com.au/forms-book-now"
-      }
+        "link": "https://motionrental.com.au/forms/book-now"
+      },
+      "links": [
+        {
+          "title": "Visit website",
+          "link": "https://motionrental.com.au"
+        }
+      ]
     }
   }
 }
