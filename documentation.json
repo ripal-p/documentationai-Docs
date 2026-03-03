@@ -69,6 +69,36 @@
                 "icon": "columns"
               }
             ]
+          },
+          {
+            "group": "Account",
+            "pages": [],
+            "icon": "circle-user"
+          },
+          {
+            "group": "License",
+            "pages": [],
+            "icon": "id-card"
+          },
+          {
+            "group": "Payments",
+            "pages": [],
+            "icon": "badge-dollar-sign"
+          },
+          {
+            "group": "Rentals",
+            "pages": [],
+            "icon": "album-icon"
+          },
+          {
+            "group": "Vehicle & Maintenance",
+            "pages": [],
+            "icon": "lucide-wrench"
+          },
+          {
+            "group": "Other",
+            "pages": [],
+            "icon": "info"
           }
         ]
       },
