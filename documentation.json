@@ -25,17 +25,13 @@
               {
                 "title": "Get started",
                 "path": "introduction",
-                "icon": "home"
+                "icon": "home",
+                "content-width": "wide"
               },
               {
-                "title": "Quickstart",
-                "path": "quickstart",
-                "icon": "zap"
-              },
-              {
-                "title": "Components",
-                "path": "components",
-                "icon": "code"
+                "title": "Forms",
+                "path": "forms",
+                "icon": "layout-list"
               }
             ]
           },
