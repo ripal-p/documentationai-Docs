@@ -23,7 +23,7 @@
             "icon": "rocket",
             "pages": [
               {
-                "title": "Introduction",
+                "title": "Get started",
                 "path": "introduction",
                 "icon": "home"
               },
