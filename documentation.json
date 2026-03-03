@@ -72,22 +72,86 @@
           },
           {
             "group": "Account",
-            "pages": [],
+            "pages": [
+              {
+                "title": "Proof of balance",
+                "path": "proof-of-balance",
+                "icon": "lucide-newspaper"
+              },
+              {
+                "title": "Proof of identity",
+                "path": "proof-of-identity",
+                "icon": "lucide-id-card-lanyard"
+              }
+            ],
             "icon": "circle-user"
           },
           {
             "group": "License",
-            "pages": [],
+            "pages": [
+              {
+                "title": "QLD motorcycle license",
+                "path": "qld-motorcycle-license",
+                "icon": "id-card-icon"
+              },
+              {
+                "title": "Motorcycle license class",
+                "path": "motorcycle-license-class",
+                "icon": "bike"
+              }
+            ],
             "icon": "id-card"
           },
           {
             "group": "Payments",
-            "pages": [],
+            "pages": [
+              {
+                "title": "Refunds",
+                "path": "refunds",
+                "icon": "lucide-refresh-ccw"
+              },
+              {
+                "title": "Pay via PayID (ABN)",
+                "path": "pay-via-payid-abn",
+                "icon": "lucide-dollar-sign"
+              }
+            ],
             "icon": "badge-dollar-sign"
           },
           {
             "group": "Rentals",
-            "pages": [],
+            "pages": [
+              {
+                "title": "Food delivery bag",
+                "path": "food-delivery-bag",
+                "icon": "lucide-shopping-bag"
+              },
+              {
+                "title": "Roadside Assistance",
+                "path": "roadside-assistance",
+                "icon": "shield-user"
+              },
+              {
+                "title": "Helmet",
+                "path": "helmet",
+                "icon": "hard-hat"
+              },
+              {
+                "title": "Insurance",
+                "path": "insurance",
+                "icon": "shield-check"
+              },
+              {
+                "title": "Documents",
+                "path": "documents",
+                "icon": "paperclip-icon"
+              },
+              {
+                "title": "Addons & extras",
+                "path": "addons-extras",
+                "icon": "lucide-puzzle"
+              }
+            ],
             "icon": "album-icon"
           },
           {
