@@ -51,38 +51,6 @@
             "icon": "circle-user"
           },
           {
-            "group": "License",
-            "pages": [
-              {
-                "title": "QLD motorcycle license",
-                "path": "qld-motorcycle-license",
-                "icon": "id-card-icon"
-              },
-              {
-                "title": "Motorcycle license class",
-                "path": "motorcycle-license-class",
-                "icon": "bike"
-              }
-            ],
-            "icon": "id-card"
-          },
-          {
-            "group": "Payments",
-            "pages": [
-              {
-                "title": "Refunds",
-                "path": "refunds",
-                "icon": "lucide-refresh-ccw"
-              },
-              {
-                "title": "Pay via PayID (ABN)",
-                "path": "pay-via-payid-abn",
-                "icon": "lucide-dollar-sign"
-              }
-            ],
-            "icon": "badge-dollar-sign"
-          },
-          {
             "group": "Rentals",
             "pages": [
               {
@@ -119,6 +87,22 @@
             "icon": "album-icon"
           },
           {
+            "group": "Payments",
+            "pages": [
+              {
+                "title": "Refunds",
+                "path": "refunds",
+                "icon": "lucide-refresh-ccw"
+              },
+              {
+                "title": "Pay via PayID (ABN)",
+                "path": "pay-via-payid-abn",
+                "icon": "lucide-dollar-sign"
+              }
+            ],
+            "icon": "badge-dollar-sign"
+          },
+          {
             "group": "Vehicle & Maintenance",
             "pages": [
               {
@@ -148,6 +132,22 @@
               }
             ],
             "icon": "lucide-wrench"
+          },
+          {
+            "group": "License",
+            "pages": [
+              {
+                "title": "QLD motorcycle license",
+                "path": "qld-motorcycle-license",
+                "icon": "id-card-icon"
+              },
+              {
+                "title": "Motorcycle license class",
+                "path": "motorcycle-license-class",
+                "icon": "bike"
+              }
+            ],
+            "icon": "id-card"
           },
           {
             "group": "Other",
