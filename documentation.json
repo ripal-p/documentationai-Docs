@@ -186,10 +186,6 @@
                     "title": "Démarrer",
                     "path": "fr/dmarrer",
                     "icon": "home"
-                  },
-                  {
-                    "group": "Commencez ici",
-                    "pages": []
                   }
                 ]
               }
