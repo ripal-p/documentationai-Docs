@@ -169,50 +169,6 @@
                 "icon": "info"
               }
             ]
-          },
-          {
-            "tab": "Help Center",
-            "icon": "help-circle",
-            "pages": [
-              {
-                "title": "Help Center",
-                "path": "help-center",
-                "icon": "home"
-              },
-              {
-                "group": "FAQs",
-                "icon": "help-circle",
-                "expandable": false,
-                "pages": [
-                  {
-                    "title": "Documentation Source",
-                    "path": "help-center/faq/getting-started"
-                  }
-                ]
-              },
-              {
-                "group": "Troubleshooting",
-                "icon": "alert-triangle",
-                "expandable": false,
-                "pages": [
-                  {
-                    "title": "Page Missing in Sidebar",
-                    "path": "help-center/troubleshooting/install-error"
-                  }
-                ]
-              },
-              {
-                "group": "Guides",
-                "icon": "book-open",
-                "expandable": false,
-                "pages": [
-                  {
-                    "title": "Create Your First Page",
-                    "path": "help-center/guides/setup-project"
-                  }
-                ]
-              }
-            ]
           }
         ]
       }
