@@ -172,24 +172,34 @@
           },
           {
             "tab": "Support",
-            "pages": [
+            "icon": "help-circle",
+            "groups": [
               {
-                "title": "Help Center",
-                "path": "help-center",
-                "icon": "headset"
+                "group": "Support",
+                "pages": [
+                  {
+                    "title": "Help Center",
+                    "path": "help-center",
+                    "icon": "headset"
+                  }
+                ]
               },
               {
-                "title": "Changelog",
-                "path": "changelog",
-                "icon": "logs"
-              },
-              {
-                "title": "Roadmap",
-                "path": "roadmap",
-                "icon": "globe"
+                "group": "Updates",
+                "pages": [
+                  {
+                    "title": "Changelog",
+                    "path": "changelog",
+                    "icon": "logs"
+                  },
+                  {
+                    "title": "Roadmap",
+                    "path": "roadmap",
+                    "icon": "globe"
+                  }
+                ]
               }
-            ],
-            "icon": "help-circle"
+            ]
           }
         ]
       },
