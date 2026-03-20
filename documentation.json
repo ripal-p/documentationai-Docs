@@ -174,12 +174,14 @@
             "tab": "Support",
             "pages": [
               {
-                "title": "Changelog",
-                "path": "changelog"
+                "title": "Help Center",
+                "path": "help-center",
+                "icon": "headset"
               },
               {
-                "title": "Help Center",
-                "path": "help-center"
+                "title": "Changelog",
+                "path": "changelog",
+                "icon": "logs"
               }
             ],
             "icon": "help-circle"
