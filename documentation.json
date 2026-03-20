@@ -169,6 +169,15 @@
                 "icon": "info"
               }
             ]
+          },
+          {
+            "tab": "Help Center",
+            "pages": [
+              {
+                "title": "Help Center",
+                "path": "help-center"
+              }
+            ]
           }
         ]
       },
