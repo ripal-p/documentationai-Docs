@@ -171,8 +171,12 @@
             ]
           },
           {
-            "tab": "Help Center",
+            "tab": "Support",
             "pages": [
+              {
+                "title": "Changelog",
+                "path": "changelog"
+              },
               {
                 "title": "Help Center",
                 "path": "help-center"
