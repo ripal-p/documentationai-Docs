@@ -27,7 +27,7 @@
                 "pages": [
                   {
                     "title": "Get started",
-                    "path": "introduction",
+                    "path": "get-started",
                     "icon": "home"
                   },
                   {
@@ -225,7 +225,7 @@
   "ai": {
     "page-actions": []
   },
-  "initialRoute": "introduction",
+  "initialRoute": "get-started",
   "navbar": {
     "actions": {
       "primary": {
