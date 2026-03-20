@@ -182,6 +182,12 @@
                 "title": "Changelog",
                 "path": "changelog",
                 "icon": "logs"
+              },
+              {
+                "title": "Roadmap",
+                "path": "roadmap",
+                "icon": "globe",
+                "content-width": "wide"
               }
             ],
             "icon": "help-circle"
