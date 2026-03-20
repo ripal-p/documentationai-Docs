@@ -2,14 +2,14 @@
   "name": "Starter Kit",
   "colors": {
     "light": {
-      "brand": "#c8fa00",
+      "brand": "#7a9900",
       "heading": "#1a1a1a",
       "text": "#404040"
     },
     "dark": {
       "brand": "#c8fa00",
       "heading": "#f2f2f2",
-      "text": "#b3b3b3"
+      "text": "#bfbfbf"
     }
   },
   "navigation": {
