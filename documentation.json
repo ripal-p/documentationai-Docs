@@ -116,7 +116,7 @@
                   {
                     "title": "Tyre size",
                     "path": "tyre-size",
-                    "icon": "circle"
+                    "icon": "chevrons-left-right-ellipsis"
                   },
                   {
                     "title": "Tyre load index & speed rating",
