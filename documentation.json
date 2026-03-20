@@ -19,7 +19,7 @@
         "tabs": [
           {
             "tab": "Documentation",
-            "icon": "book",
+            "icon": "book-open",
             "groups": [
               {
                 "group": "Start Here",
