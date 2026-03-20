@@ -182,8 +182,8 @@
                 "group": "Commencez ici",
                 "pages": [
                   {
-                    "title": "Commencer",
-                    "path": "commencer",
+                    "title": "Démarrer",
+                    "path": "fr/get-started",
                     "icon": "home"
                   }
                 ]
