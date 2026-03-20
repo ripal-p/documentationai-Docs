@@ -177,7 +177,8 @@
         "tabs": [
           {
             "tab": "La documentation",
-            "pages": [
+            "icon": "book-open-icon",
+            "groups": [
               {
                 "group": "Commencez ici",
                 "pages": [
@@ -185,11 +186,14 @@
                     "title": "Démarrer",
                     "path": "fr/dmarrer",
                     "icon": "home"
+                  },
+                  {
+                    "group": "Commencez ici",
+                    "pages": []
                   }
                 ]
               }
-            ],
-            "icon": "book-open-icon"
+            ]
           }
         ]
       }
