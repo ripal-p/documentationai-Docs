@@ -177,7 +177,18 @@
         "tabs": [
           {
             "tab": "La documentation",
-            "pages": []
+            "pages": [
+              {
+                "group": "Commencez ici",
+                "pages": [
+                  {
+                    "title": "Commencer",
+                    "path": "commencer",
+                    "icon": "home"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
