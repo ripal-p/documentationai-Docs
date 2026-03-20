@@ -186,8 +186,7 @@
               {
                 "title": "Roadmap",
                 "path": "roadmap",
-                "icon": "globe",
-                "content-width": "wide"
+                "icon": "globe"
               }
             ],
             "icon": "help-circle"
