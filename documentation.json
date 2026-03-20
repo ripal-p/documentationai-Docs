@@ -177,15 +177,152 @@
         "tabs": [
           {
             "tab": "La documentation",
-            "icon": "book-open-icon",
+            "icon": "book-open",
             "groups": [
               {
                 "group": "Commencez ici",
+                "icon": "rocket",
                 "pages": [
                   {
                     "title": "Démarrer",
                     "path": "fr/demarrer",
                     "icon": "home"
+                  },
+                  {
+                    "title": "Formulaires",
+                    "path": "fr/forms",
+                    "icon": "layout-list"
+                  }
+                ]
+              },
+              {
+                "group": "Compte",
+                "icon": "circle-user",
+                "pages": [
+                  {
+                    "title": "Attestation de solde",
+                    "path": "fr/proof-of-balance",
+                    "icon": "lucide-newspaper"
+                  },
+                  {
+                    "title": "Justificatif d’identité",
+                    "path": "fr/proof-of-identity",
+                    "icon": "lucide-id-card-lanyard"
+                  }
+                ]
+              },
+              {
+                "group": "Locations",
+                "icon": "album-icon",
+                "pages": [
+                  {
+                    "title": "Options et suppléments",
+                    "path": "fr/addons-extras",
+                    "icon": "lucide-puzzle"
+                  },
+                  {
+                    "title": "Assurance",
+                    "path": "fr/insurance",
+                    "icon": "shield-check"
+                  },
+                  {
+                    "title": "Casque",
+                    "path": "fr/helmet",
+                    "icon": "hard-hat"
+                  },
+                  {
+                    "title": "Assistance routière",
+                    "path": "fr/roadside-assistance",
+                    "icon": "shield-user"
+                  },
+                  {
+                    "title": "Sac de livraison de nourriture",
+                    "path": "fr/food-delivery-bag",
+                    "icon": "lucide-shopping-bag"
+                  },
+                  {
+                    "title": "Documents",
+                    "path": "fr/documents",
+                    "icon": "paperclip-icon"
+                  }
+                ]
+              },
+              {
+                "group": "Paiements",
+                "icon": "badge-dollar-sign",
+                "pages": [
+                  {
+                    "title": "Remboursements",
+                    "path": "fr/refunds",
+                    "icon": "lucide-refresh-ccw"
+                  },
+                  {
+                    "title": "Payer via PayID (ABN)",
+                    "path": "fr/pay-via-payid-abn",
+                    "icon": "lucide-dollar-sign"
+                  }
+                ]
+              },
+              {
+                "group": "Véhicule et entretien",
+                "icon": "lucide-wrench",
+                "pages": [
+                  {
+                    "title": "Pneu crevé",
+                    "path": "fr/flat-tyre",
+                    "icon": "loader-pinwheel"
+                  },
+                  {
+                    "title": "Taille des pneus",
+                    "path": "fr/tyre-size",
+                    "icon": "chevrons-left-right-ellipsis"
+                  },
+                  {
+                    "title": "Indice de charge et indice de vitesse",
+                    "path": "fr/tyre-load-index-speed-rating",
+                    "icon": "lucide-rocket"
+                  },
+                  {
+                    "title": "Intervalles de service",
+                    "path": "fr/service-intervals",
+                    "icon": "lucide-timer"
+                  },
+                  {
+                    "title": "Contrôles hebdomadaires",
+                    "path": "fr/weekly-checks",
+                    "icon": "calendar-check"
+                  }
+                ]
+              },
+              {
+                "group": "Permis",
+                "icon": "id-card",
+                "pages": [
+                  {
+                    "title": "Permis moto QLD",
+                    "path": "fr/qld-motorcycle-license",
+                    "icon": "id-card-icon"
+                  },
+                  {
+                    "title": "Catégorie de permis moto",
+                    "path": "fr/motorcycle-license-class",
+                    "icon": "bike"
+                  }
+                ]
+              },
+              {
+                "group": "Autre",
+                "icon": "info",
+                "pages": [
+                  {
+                    "title": "Programme partenaire",
+                    "path": "fr/partner-program",
+                    "icon": "lucide-handshake"
+                  },
+                  {
+                    "title": "Éléments de marque",
+                    "path": "fr/brand-assets",
+                    "icon": "lucide-stamp"
                   }
                 ]
               }
