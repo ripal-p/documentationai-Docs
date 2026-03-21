@@ -15,7 +15,7 @@
   "navigation": {
     "languages": [
       {
-        "language": "English",
+        "language": "English (en)",
         "tabs": [
           {
             "tab": "Documentation",
@@ -204,7 +204,7 @@
         ]
       },
       {
-        "language": "Français",
+        "language": "Français (fr)",
         "tabs": [
           {
             "tab": "La documentation",
@@ -362,7 +362,7 @@
         ]
       },
       {
-        "language": "हिंदी",
+        "language": "हिंदी (hi)",
         "tabs": [
           {
             "tab": "प्रलेखन",
@@ -435,29 +435,108 @@
                     "icon": "paperclip-icon"
                   }
                 ]
+              },
+              {
+                "group": "भुगतान",
+                "icon": "badge-dollar-sign",
+                "pages": [
+                  {
+                    "title": "रिफंड",
+                    "path": "hi/refunds",
+                    "icon": "lucide-refresh-ccw"
+                  },
+                  {
+                    "title": "PayID (ABN) से भुगतान",
+                    "path": "hi/pay-via-payid-abn",
+                    "icon": "lucide-dollar-sign"
+                  }
+                ]
+              },
+              {
+                "group": "वाहन और रखरखाव",
+                "icon": "lucide-wrench",
+                "pages": [
+                  {
+                    "title": "पंक्चर टायर",
+                    "path": "hi/flat-tyre",
+                    "icon": "loader-pinwheel"
+                  },
+                  {
+                    "title": "टायर साइज़",
+                    "path": "hi/tyre-size",
+                    "icon": "chevrons-left-right-ellipsis"
+                  },
+                  {
+                    "title": "टायर लोड इंडेक्स और स्पीड रेटिंग",
+                    "path": "hi/tyre-load-index-speed-rating",
+                    "icon": "lucide-rocket"
+                  },
+                  {
+                    "title": "सर्विस अंतराल",
+                    "path": "hi/service-intervals",
+                    "icon": "lucide-timer"
+                  },
+                  {
+                    "title": "साप्ताहिक जांच",
+                    "path": "hi/weekly-checks",
+                    "icon": "calendar-check"
+                  }
+                ]
+              },
+              {
+                "group": "लाइसेंस",
+                "icon": "id-card",
+                "pages": [
+                  {
+                    "title": "क्यूएलडी मोटरसाइकिल लाइसेंस",
+                    "path": "hi/qld-motorcycle-license",
+                    "icon": "id-card-icon"
+                  },
+                  {
+                    "title": "मोटरसाइकिल लाइसेंस क्लास",
+                    "path": "hi/motorcycle-license-class",
+                    "icon": "bike"
+                  }
+                ]
+              },
+              {
+                "group": "अन्य",
+                "icon": "info",
+                "pages": [
+                  {
+                    "title": "पार्टनर प्रोग्राम",
+                    "path": "hi/partner-program",
+                    "icon": "lucide-handshake"
+                  },
+                  {
+                    "title": "ब्रांड एसेट्स",
+                    "path": "hi/brand-assets",
+                    "icon": "lucide-stamp"
+                  }
+                ]
               }
             ]
           }
         ]
       },
       {
-        "language": "Español",
+        "language": "Español (es)",
         "pages": []
       },
       {
-        "language": "Deutsch",
+        "language": "Deutsch (de)",
         "pages": []
       },
       {
-        "language": "Italiano",
+        "language": "Italiano (it)",
         "pages": []
       },
       {
-        "language": "Português",
+        "language": "Português (pt)",
         "pages": []
       },
       {
-        "language": "中國人",
+        "language": "中國人 (zh-TW)",
         "pages": []
       }
     ]
