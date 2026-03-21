@@ -15,7 +15,7 @@
   "navigation": {
     "languages": [
       {
-        "language": "English (en)",
+        "language": "English",
         "tabs": [
           {
             "tab": "Documentation",
@@ -204,7 +204,7 @@
         ]
       },
       {
-        "language": "Français (fr)",
+        "language": "Français",
         "tabs": [
           {
             "tab": "La documentation",
@@ -362,7 +362,7 @@
         ]
       },
       {
-        "language": "हिंदी (hi)",
+        "language": "हिंदी",
         "tabs": [
           {
             "tab": "प्रलेखन",
@@ -521,7 +521,46 @@
       },
       {
         "language": "Español (es)",
-        "pages": []
+        "tabs": [
+          {
+            "tab": "Documentación",
+            "icon": "book-open",
+            "groups": [
+              {
+                "group": "Comienza aquí",
+                "icon": "rocket",
+                "pages": [
+                  {
+                    "title": "Comienza con Motion Rental",
+                    "path": "es/get-started",
+                    "icon": "home"
+                  },
+                  {
+                    "title": "Formularios",
+                    "path": "es/forms",
+                    "icon": "layout-list"
+                  }
+                ]
+              },
+              {
+                "group": "Cuenta",
+                "icon": "circle-user",
+                "pages": [
+                  {
+                    "title": "Comprobante de saldo",
+                    "path": "es/proof-of-balance",
+                    "icon": "lucide-newspaper"
+                  },
+                  {
+                    "title": "Comprobante de identidad",
+                    "path": "es/proof-of-identity",
+                    "icon": "lucide-id-card-lanyard"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "language": "Deutsch (de)",
