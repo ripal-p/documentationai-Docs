@@ -204,7 +204,7 @@
         ]
       },
       {
-        "language": "French",
+        "language": "Français",
         "tabs": [
           {
             "tab": "La documentation",
@@ -360,6 +360,35 @@
             ]
           }
         ]
+      },
+      {
+        "language": "हिंदी",
+        "tabs": [
+          {
+            "tab": "प्रलेखन",
+            "pages": []
+          }
+        ]
+      },
+      {
+        "language": "Español",
+        "pages": []
+      },
+      {
+        "language": "Deutsch",
+        "pages": []
+      },
+      {
+        "language": "Italiano",
+        "pages": []
+      },
+      {
+        "language": "Português",
+        "pages": []
+      },
+      {
+        "language": "中国人",
+        "pages": []
       }
     ]
   },
