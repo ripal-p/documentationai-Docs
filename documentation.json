@@ -399,6 +399,42 @@
                     "icon": "lucide-id-card-lanyard"
                   }
                 ]
+              },
+              {
+                "group": "रेंटल",
+                "icon": "album-icon",
+                "pages": [
+                  {
+                    "title": "ऐडऑन और अतिरिक्त विकल्प",
+                    "path": "hi/addons-extras",
+                    "icon": "lucide-puzzle"
+                  },
+                  {
+                    "title": "बीमा",
+                    "path": "hi/insurance",
+                    "icon": "shield-check"
+                  },
+                  {
+                    "title": "हेलमेट",
+                    "path": "hi/helmet",
+                    "icon": "hard-hat"
+                  },
+                  {
+                    "title": "सड़क किनारे सहायता",
+                    "path": "hi/roadside-assistance",
+                    "icon": "shield-user"
+                  },
+                  {
+                    "title": "फूड डिलीवरी बैग",
+                    "path": "hi/food-delivery-bag",
+                    "icon": "lucide-shopping-bag"
+                  },
+                  {
+                    "title": "दस्तावेज़",
+                    "path": "hi/documents",
+                    "icon": "paperclip-icon"
+                  }
+                ]
               }
             ]
           }
