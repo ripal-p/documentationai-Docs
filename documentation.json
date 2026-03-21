@@ -15,7 +15,7 @@
   "navigation": {
     "languages": [
       {
-        "language": "English",
+        "language": "English (en)",
         "tabs": [
           {
             "tab": "Documentation",
@@ -204,7 +204,7 @@
         ]
       },
       {
-        "language": "Français",
+        "language": "Français (fr)",
         "tabs": [
           {
             "tab": "La documentation",
@@ -362,7 +362,7 @@
         ]
       },
       {
-        "language": "हिंदी",
+        "language": "हिंदी (hi)",
         "tabs": [
           {
             "tab": "प्रलेखन",
