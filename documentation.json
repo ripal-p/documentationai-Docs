@@ -18,7 +18,7 @@
         "language": "English (en)",
         "products": [
           {
-            "product": "Scooters",
+            "product": "Operation",
             "tabs": [
               {
                 "tab": "Documentation",
@@ -205,6 +205,10 @@
                 ]
               }
             ]
+          },
+          {
+            "product": "Vehicles",
+            "pages": []
           }
         ]
       },
