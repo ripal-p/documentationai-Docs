@@ -679,19 +679,635 @@
       },
       {
         "language": "Deutsch (de)",
-        "pages": []
+        "tabs": [
+          {
+            "tab": "Documentation",
+            "icon": "book-open",
+            "groups": [
+              {
+                "group": "Start Here",
+                "icon": "rocket",
+                "pages": [
+                  {
+                    "title": "Get started",
+                    "path": "de/get-started",
+                    "icon": "home"
+                  },
+                  {
+                    "title": "Forms",
+                    "path": "de/forms",
+                    "icon": "layout-list"
+                  }
+                ]
+              },
+              {
+                "group": "Account",
+                "icon": "circle-user",
+                "pages": [
+                  {
+                    "title": "Proof of balance",
+                    "path": "de/proof-of-balance",
+                    "icon": "lucide-newspaper"
+                  },
+                  {
+                    "title": "Proof of identity",
+                    "path": "de/proof-of-identity",
+                    "icon": "lucide-id-card-lanyard"
+                  }
+                ]
+              },
+              {
+                "group": "Rentals",
+                "icon": "album-icon",
+                "pages": [
+                  {
+                    "title": "Addons & extras",
+                    "path": "de/addons-extras",
+                    "icon": "lucide-puzzle"
+                  },
+                  {
+                    "title": "Insurance",
+                    "path": "de/insurance",
+                    "icon": "shield-check"
+                  },
+                  {
+                    "title": "Helmet",
+                    "path": "de/helmet",
+                    "icon": "hard-hat"
+                  },
+                  {
+                    "title": "Roadside assistance",
+                    "path": "de/roadside-assistance",
+                    "icon": "shield-user"
+                  },
+                  {
+                    "title": "Food delivery bag",
+                    "path": "de/food-delivery-bag",
+                    "icon": "lucide-shopping-bag"
+                  },
+                  {
+                    "title": "Documents",
+                    "path": "de/documents",
+                    "icon": "paperclip-icon"
+                  }
+                ]
+              },
+              {
+                "group": "Payments",
+                "icon": "badge-dollar-sign",
+                "pages": [
+                  {
+                    "title": "Refunds",
+                    "path": "de/refunds",
+                    "icon": "lucide-refresh-ccw"
+                  },
+                  {
+                    "title": "Pay via PayID (ABN)",
+                    "path": "de/pay-via-payid-abn",
+                    "icon": "lucide-dollar-sign"
+                  }
+                ]
+              },
+              {
+                "group": "Vehicle & Maintenance",
+                "icon": "lucide-wrench",
+                "pages": [
+                  {
+                    "title": "Flat tyre",
+                    "path": "de/flat-tyre",
+                    "icon": "loader-pinwheel"
+                  },
+                  {
+                    "title": "Tyre size",
+                    "path": "de/tyre-size",
+                    "icon": "chevrons-left-right-ellipsis"
+                  },
+                  {
+                    "title": "Tyre load index & speed rating",
+                    "path": "de/tyre-load-index-speed-rating",
+                    "icon": "lucide-rocket"
+                  },
+                  {
+                    "title": "Service intervals",
+                    "path": "de/service-intervals",
+                    "icon": "lucide-timer"
+                  },
+                  {
+                    "title": "Weekly checks",
+                    "path": "de/weekly-checks",
+                    "icon": "calendar-check"
+                  }
+                ]
+              },
+              {
+                "group": "License",
+                "icon": "id-card",
+                "pages": [
+                  {
+                    "title": "QLD motorcycle license",
+                    "path": "de/qld-motorcycle-license",
+                    "icon": "id-card-icon"
+                  },
+                  {
+                    "title": "Motorcycle license class",
+                    "path": "de/motorcycle-license-class",
+                    "icon": "bike"
+                  }
+                ]
+              },
+              {
+                "group": "Other",
+                "icon": "info",
+                "pages": [
+                  {
+                    "title": "Partner program",
+                    "path": "de/partner-program",
+                    "icon": "lucide-handshake"
+                  },
+                  {
+                    "title": "Brand assets",
+                    "path": "de/brand-assets",
+                    "icon": "lucide-stamp"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "language": "Italiano (it)",
-        "pages": []
+        "tabs": [
+          {
+            "tab": "Documentation",
+            "icon": "book-open",
+            "groups": [
+              {
+                "group": "Start Here",
+                "icon": "rocket",
+                "pages": [
+                  {
+                    "title": "Get started",
+                    "path": "it/get-started",
+                    "icon": "home"
+                  },
+                  {
+                    "title": "Forms",
+                    "path": "it/forms",
+                    "icon": "layout-list"
+                  }
+                ]
+              },
+              {
+                "group": "Account",
+                "icon": "circle-user",
+                "pages": [
+                  {
+                    "title": "Proof of balance",
+                    "path": "it/proof-of-balance",
+                    "icon": "lucide-newspaper"
+                  },
+                  {
+                    "title": "Proof of identity",
+                    "path": "it/proof-of-identity",
+                    "icon": "lucide-id-card-lanyard"
+                  }
+                ]
+              },
+              {
+                "group": "Rentals",
+                "icon": "album-icon",
+                "pages": [
+                  {
+                    "title": "Addons & extras",
+                    "path": "it/addons-extras",
+                    "icon": "lucide-puzzle"
+                  },
+                  {
+                    "title": "Insurance",
+                    "path": "it/insurance",
+                    "icon": "shield-check"
+                  },
+                  {
+                    "title": "Helmet",
+                    "path": "it/helmet",
+                    "icon": "hard-hat"
+                  },
+                  {
+                    "title": "Roadside assistance",
+                    "path": "it/roadside-assistance",
+                    "icon": "shield-user"
+                  },
+                  {
+                    "title": "Food delivery bag",
+                    "path": "it/food-delivery-bag",
+                    "icon": "lucide-shopping-bag"
+                  },
+                  {
+                    "title": "Documents",
+                    "path": "it/documents",
+                    "icon": "paperclip-icon"
+                  }
+                ]
+              },
+              {
+                "group": "Payments",
+                "icon": "badge-dollar-sign",
+                "pages": [
+                  {
+                    "title": "Refunds",
+                    "path": "it/refunds",
+                    "icon": "lucide-refresh-ccw"
+                  },
+                  {
+                    "title": "Pay via PayID (ABN)",
+                    "path": "it/pay-via-payid-abn",
+                    "icon": "lucide-dollar-sign"
+                  }
+                ]
+              },
+              {
+                "group": "Vehicle & Maintenance",
+                "icon": "lucide-wrench",
+                "pages": [
+                  {
+                    "title": "Flat tyre",
+                    "path": "it/flat-tyre",
+                    "icon": "loader-pinwheel"
+                  },
+                  {
+                    "title": "Tyre size",
+                    "path": "it/tyre-size",
+                    "icon": "chevrons-left-right-ellipsis"
+                  },
+                  {
+                    "title": "Tyre load index & speed rating",
+                    "path": "it/tyre-load-index-speed-rating",
+                    "icon": "lucide-rocket"
+                  },
+                  {
+                    "title": "Service intervals",
+                    "path": "it/service-intervals",
+                    "icon": "lucide-timer"
+                  },
+                  {
+                    "title": "Weekly checks",
+                    "path": "it/weekly-checks",
+                    "icon": "calendar-check"
+                  }
+                ]
+              },
+              {
+                "group": "License",
+                "icon": "id-card",
+                "pages": [
+                  {
+                    "title": "QLD motorcycle license",
+                    "path": "it/qld-motorcycle-license",
+                    "icon": "id-card-icon"
+                  },
+                  {
+                    "title": "Motorcycle license class",
+                    "path": "it/motorcycle-license-class",
+                    "icon": "bike"
+                  }
+                ]
+              },
+              {
+                "group": "Other",
+                "icon": "info",
+                "pages": [
+                  {
+                    "title": "Partner program",
+                    "path": "it/partner-program",
+                    "icon": "lucide-handshake"
+                  },
+                  {
+                    "title": "Brand assets",
+                    "path": "it/brand-assets",
+                    "icon": "lucide-stamp"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "language": "Português (pt)",
-        "pages": []
+        "tabs": [
+          {
+            "tab": "Documentation",
+            "icon": "book-open",
+            "groups": [
+              {
+                "group": "Start Here",
+                "icon": "rocket",
+                "pages": [
+                  {
+                    "title": "Get started",
+                    "path": "pt/get-started",
+                    "icon": "home"
+                  },
+                  {
+                    "title": "Forms",
+                    "path": "pt/forms",
+                    "icon": "layout-list"
+                  }
+                ]
+              },
+              {
+                "group": "Account",
+                "icon": "circle-user",
+                "pages": [
+                  {
+                    "title": "Proof of balance",
+                    "path": "pt/proof-of-balance",
+                    "icon": "lucide-newspaper"
+                  },
+                  {
+                    "title": "Proof of identity",
+                    "path": "pt/proof-of-identity",
+                    "icon": "lucide-id-card-lanyard"
+                  }
+                ]
+              },
+              {
+                "group": "Rentals",
+                "icon": "album-icon",
+                "pages": [
+                  {
+                    "title": "Addons & extras",
+                    "path": "pt/addons-extras",
+                    "icon": "lucide-puzzle"
+                  },
+                  {
+                    "title": "Insurance",
+                    "path": "pt/insurance",
+                    "icon": "shield-check"
+                  },
+                  {
+                    "title": "Helmet",
+                    "path": "pt/helmet",
+                    "icon": "hard-hat"
+                  },
+                  {
+                    "title": "Roadside assistance",
+                    "path": "pt/roadside-assistance",
+                    "icon": "shield-user"
+                  },
+                  {
+                    "title": "Food delivery bag",
+                    "path": "pt/food-delivery-bag",
+                    "icon": "lucide-shopping-bag"
+                  },
+                  {
+                    "title": "Documents",
+                    "path": "pt/documents",
+                    "icon": "paperclip-icon"
+                  }
+                ]
+              },
+              {
+                "group": "Payments",
+                "icon": "badge-dollar-sign",
+                "pages": [
+                  {
+                    "title": "Refunds",
+                    "path": "pt/refunds",
+                    "icon": "lucide-refresh-ccw"
+                  },
+                  {
+                    "title": "Pay via PayID (ABN)",
+                    "path": "pt/pay-via-payid-abn",
+                    "icon": "lucide-dollar-sign"
+                  }
+                ]
+              },
+              {
+                "group": "Vehicle & Maintenance",
+                "icon": "lucide-wrench",
+                "pages": [
+                  {
+                    "title": "Flat tyre",
+                    "path": "pt/flat-tyre",
+                    "icon": "loader-pinwheel"
+                  },
+                  {
+                    "title": "Tyre size",
+                    "path": "pt/tyre-size",
+                    "icon": "chevrons-left-right-ellipsis"
+                  },
+                  {
+                    "title": "Tyre load index & speed rating",
+                    "path": "pt/tyre-load-index-speed-rating",
+                    "icon": "lucide-rocket"
+                  },
+                  {
+                    "title": "Service intervals",
+                    "path": "pt/service-intervals",
+                    "icon": "lucide-timer"
+                  },
+                  {
+                    "title": "Weekly checks",
+                    "path": "pt/weekly-checks",
+                    "icon": "calendar-check"
+                  }
+                ]
+              },
+              {
+                "group": "License",
+                "icon": "id-card",
+                "pages": [
+                  {
+                    "title": "QLD motorcycle license",
+                    "path": "pt/qld-motorcycle-license",
+                    "icon": "id-card-icon"
+                  },
+                  {
+                    "title": "Motorcycle license class",
+                    "path": "pt/motorcycle-license-class",
+                    "icon": "bike"
+                  }
+                ]
+              },
+              {
+                "group": "Other",
+                "icon": "info",
+                "pages": [
+                  {
+                    "title": "Partner program",
+                    "path": "pt/partner-program",
+                    "icon": "lucide-handshake"
+                  },
+                  {
+                    "title": "Brand assets",
+                    "path": "pt/brand-assets",
+                    "icon": "lucide-stamp"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "language": "中國人 (zh-TW)",
-        "pages": []
+        "tabs": [
+          {
+            "tab": "Documentation",
+            "icon": "book-open",
+            "groups": [
+              {
+                "group": "Start Here",
+                "icon": "rocket",
+                "pages": [
+                  {
+                    "title": "Get started",
+                    "path": "zh-tw/get-started",
+                    "icon": "home"
+                  },
+                  {
+                    "title": "Forms",
+                    "path": "zh-tw/forms",
+                    "icon": "layout-list"
+                  }
+                ]
+              },
+              {
+                "group": "Account",
+                "icon": "circle-user",
+                "pages": [
+                  {
+                    "title": "Proof of balance",
+                    "path": "zh-tw/proof-of-balance",
+                    "icon": "lucide-newspaper"
+                  },
+                  {
+                    "title": "Proof of identity",
+                    "path": "zh-tw/proof-of-identity",
+                    "icon": "lucide-id-card-lanyard"
+                  }
+                ]
+              },
+              {
+                "group": "Rentals",
+                "icon": "album-icon",
+                "pages": [
+                  {
+                    "title": "Addons & extras",
+                    "path": "zh-tw/addons-extras",
+                    "icon": "lucide-puzzle"
+                  },
+                  {
+                    "title": "Insurance",
+                    "path": "zh-tw/insurance",
+                    "icon": "shield-check"
+                  },
+                  {
+                    "title": "Helmet",
+                    "path": "zh-tw/helmet",
+                    "icon": "hard-hat"
+                  },
+                  {
+                    "title": "Roadside assistance",
+                    "path": "zh-tw/roadside-assistance",
+                    "icon": "shield-user"
+                  },
+                  {
+                    "title": "Food delivery bag",
+                    "path": "zh-tw/food-delivery-bag",
+                    "icon": "lucide-shopping-bag"
+                  },
+                  {
+                    "title": "Documents",
+                    "path": "zh-tw/documents",
+                    "icon": "paperclip-icon"
+                  }
+                ]
+              },
+              {
+                "group": "Payments",
+                "icon": "badge-dollar-sign",
+                "pages": [
+                  {
+                    "title": "Refunds",
+                    "path": "zh-tw/refunds",
+                    "icon": "lucide-refresh-ccw"
+                  },
+                  {
+                    "title": "Pay via PayID (ABN)",
+                    "path": "zh-tw/pay-via-payid-abn",
+                    "icon": "lucide-dollar-sign"
+                  }
+                ]
+              },
+              {
+                "group": "Vehicle & Maintenance",
+                "icon": "lucide-wrench",
+                "pages": [
+                  {
+                    "title": "Flat tyre",
+                    "path": "zh-tw/flat-tyre",
+                    "icon": "loader-pinwheel"
+                  },
+                  {
+                    "title": "Tyre size",
+                    "path": "zh-tw/tyre-size",
+                    "icon": "chevrons-left-right-ellipsis"
+                  },
+                  {
+                    "title": "Tyre load index & speed rating",
+                    "path": "zh-tw/tyre-load-index-speed-rating",
+                    "icon": "lucide-rocket"
+                  },
+                  {
+                    "title": "Service intervals",
+                    "path": "zh-tw/service-intervals",
+                    "icon": "lucide-timer"
+                  },
+                  {
+                    "title": "Weekly checks",
+                    "path": "zh-tw/weekly-checks",
+                    "icon": "calendar-check"
+                  }
+                ]
+              },
+              {
+                "group": "License",
+                "icon": "id-card",
+                "pages": [
+                  {
+                    "title": "QLD motorcycle license",
+                    "path": "zh-tw/qld-motorcycle-license",
+                    "icon": "id-card-icon"
+                  },
+                  {
+                    "title": "Motorcycle license class",
+                    "path": "zh-tw/motorcycle-license-class",
+                    "icon": "bike"
+                  }
+                ]
+              },
+              {
+                "group": "Other",
+                "icon": "info",
+                "pages": [
+                  {
+                    "title": "Partner program",
+                    "path": "zh-tw/partner-program",
+                    "icon": "lucide-handshake"
+                  },
+                  {
+                    "title": "Brand assets",
+                    "path": "zh-tw/brand-assets",
+                    "icon": "lucide-stamp"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       }
     ]
   },
