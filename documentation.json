@@ -366,7 +366,41 @@
         "tabs": [
           {
             "tab": "प्रलेखन",
-            "pages": []
+            "icon": "book-open",
+            "groups": [
+              {
+                "group": "यहाँ से शुरू करें",
+                "icon": "rocket",
+                "pages": [
+                  {
+                    "title": "शुरुआत करें",
+                    "path": "hi/get-started",
+                    "icon": "home"
+                  },
+                  {
+                    "title": "फ़ॉर्म",
+                    "path": "hi/forms",
+                    "icon": "layout-list"
+                  }
+                ]
+              },
+              {
+                "group": "खाता",
+                "icon": "circle-user",
+                "pages": [
+                  {
+                    "title": "बैलेंस का प्रमाण",
+                    "path": "hi/proof-of-balance",
+                    "icon": "lucide-newspaper"
+                  },
+                  {
+                    "title": "पहचान का प्रमाण",
+                    "path": "hi/proof-of-identity",
+                    "icon": "lucide-id-card-lanyard"
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
