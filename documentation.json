@@ -623,6 +623,53 @@
                     "title": "Tamaño de neumático",
                     "path": "es/tyre-size",
                     "icon": "chevrons-left-right-ellipsis"
+                  },
+                  {
+                    "title": "Índice de carga y código de velocidad del neumático",
+                    "path": "es/tyre-load-index-speed-rating",
+                    "icon": "lucide-rocket"
+                  },
+                  {
+                    "title": "Intervalos de servicio",
+                    "path": "es/service-intervals",
+                    "icon": "lucide-timer"
+                  },
+                  {
+                    "title": "Controles semanales del vehículo",
+                    "path": "es/weekly-checks",
+                    "icon": "calendar-check"
+                  }
+                ]
+              },
+              {
+                "group": "Licencia",
+                "icon": "id-card",
+                "pages": [
+                  {
+                    "title": "Licencia de moto QLD",
+                    "path": "es/qld-motorcycle-license",
+                    "icon": "id-card-icon"
+                  },
+                  {
+                    "title": "Clase de licencia de moto",
+                    "path": "es/motorcycle-license-class",
+                    "icon": "bike"
+                  }
+                ]
+              },
+              {
+                "group": "Otros",
+                "icon": "info",
+                "pages": [
+                  {
+                    "title": "Programa de socios",
+                    "path": "es/partner-program",
+                    "icon": "lucide-handshake"
+                  },
+                  {
+                    "title": "Elementos de marca",
+                    "path": "es/brand-assets",
+                    "icon": "lucide-stamp"
                   }
                 ]
               }
