@@ -557,6 +557,74 @@
                     "icon": "lucide-id-card-lanyard"
                   }
                 ]
+              },
+              {
+                "group": "Alquileres",
+                "icon": "album-icon",
+                "pages": [
+                  {
+                    "title": "Opciones y extras",
+                    "path": "es/addons-extras",
+                    "icon": "lucide-puzzle"
+                  },
+                  {
+                    "title": "Seguro de alquiler",
+                    "path": "es/insurance",
+                    "icon": "shield-check"
+                  },
+                  {
+                    "title": "Casco",
+                    "path": "es/helmet",
+                    "icon": "hard-hat"
+                  },
+                  {
+                    "title": "Asistencia en carretera",
+                    "path": "es/roadside-assistance",
+                    "icon": "shield-user"
+                  },
+                  {
+                    "title": "Bolsa para reparto de comida",
+                    "path": "es/food-delivery-bag",
+                    "icon": "lucide-shopping-bag"
+                  },
+                  {
+                    "title": "Documentos de alquiler",
+                    "path": "es/documents",
+                    "icon": "paperclip-icon"
+                  }
+                ]
+              },
+              {
+                "group": "Pagos",
+                "icon": "badge-dollar-sign",
+                "pages": [
+                  {
+                    "title": "Reembolsos",
+                    "path": "es/refunds",
+                    "icon": "lucide-refresh-ccw"
+                  },
+                  {
+                    "title": "Pagar vía PayID (ABN)",
+                    "path": "es/pay-via-payid-abn",
+                    "icon": "lucide-dollar-sign"
+                  }
+                ]
+              },
+              {
+                "group": "Vehículo y mantenimiento",
+                "icon": "lucide-wrench",
+                "pages": [
+                  {
+                    "title": "Neumático pinchado",
+                    "path": "es/flat-tyre",
+                    "icon": "loader-pinwheel"
+                  },
+                  {
+                    "title": "Tamaño de neumático",
+                    "path": "es/tyre-size",
+                    "icon": "chevrons-left-right-ellipsis"
+                  }
+                ]
               }
             ]
           }
