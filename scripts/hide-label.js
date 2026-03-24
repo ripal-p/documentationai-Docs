@@ -1,33 +1,35 @@
 <script>
 (function () {
-  function removeDocAI() {
-    const link = document.querySelector('a[href*="documentation.ai"]');
-    if (!link) return;
+  function nukeDocAI() {
+    const allElements = document.querySelectorAll('*');
 
-    // Remove the nearest meaningful container
-    let el = link;
-    while (el && el !== document.body) {
-      // This is the footer wrapper in your HTML
-      if (el.classList && el.classList.contains('mt-8')) {
-        el.remove();
-        return;
+    allElements.forEach(el => {
+      if (
+        el.textContent &&
+        el.textContent.toLowerCase().includes('documentation.ai')
+      ) {
+        // Try to remove a reasonably high-level container
+        let parent = el;
+
+        for (let i = 0; i < 5; i++) {
+          if (!parent.parentElement) break;
+          parent = parent.parentElement;
+        }
+
+        parent.remove();
       }
-      el = el.parentElement;
-    }
-
-    // fallback: just remove the link if wrapper not found
-    link.remove();
+    });
   }
 
-  // Run repeatedly until removed
+  // Run repeatedly for a short period to beat re-renders
+  let attempts = 0;
   const interval = setInterval(() => {
-    removeDocAI();
+    nukeDocAI();
+    attempts++;
 
-    // Stop once it's gone
-    if (!document.querySelector('a[href*="documentation.ai"]')) {
+    if (attempts > 20) {
       clearInterval(interval);
     }
   }, 300);
-
 })();
 </script>
