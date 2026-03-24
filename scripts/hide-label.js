@@ -1,6 +1,6 @@
 <script>
 (function () {
-  function removeFooter() {
+  function hideFooter() {
     const nav = document.querySelector('nav[data-component="PageNavigation"]');
     if (!nav) return;
 
@@ -18,18 +18,18 @@
       ) {
         const wrapper = link.closest('div');
         if (wrapper) {
-          wrapper.remove(); // 🔥 completely removes it
+          wrapper.style.display = 'none';
         }
       }
     });
   }
 
-  // Run immediately
-  removeFooter();
+  // Run once immediately
+  hideFooter();
 
-  // Keep watching for dynamically added content
+  // Observe DOM changes (for SSR / dynamic rendering)
   const observer = new MutationObserver(() => {
-    removeFooter();
+    hideFooter();
   });
 
   observer.observe(document.body, {
