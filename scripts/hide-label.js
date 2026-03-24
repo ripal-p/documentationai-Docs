@@ -1,35 +1,17 @@
 <script>
 (function () {
-  function hideFooter() {
-    const nav = document.querySelector('nav[data-component="PageNavigation"]');
-    if (!nav) return;
-
-    const container = nav.parentElement;
-    if (!container) return;
-
-    const links = container.querySelectorAll('a');
-
-    links.forEach(link => {
-      const span = link.querySelector('span');
-      if (
-        span &&
-        span.textContent &&
-        span.textContent.toLowerCase().includes('documentation.ai')
-      ) {
-        const wrapper = link.closest('div');
-        if (wrapper) {
-          wrapper.style.display = 'none';
-        }
-      }
-    });
-  }
-
-  // Run once immediately
-  hideFooter();
-
-  // Observe DOM changes (for SSR / dynamic rendering)
   const observer = new MutationObserver(() => {
-    hideFooter();
+    document.querySelectorAll('a[href*="documentation.ai"]').forEach(link => {
+      let el = link;
+      while (el && el !== document.body) {
+        if (el.classList && el.classList.contains('mt-8')) {
+          el.remove();
+          return;
+        }
+        el = el.parentElement;
+      }
+      link.remove();
+    });
   });
 
   observer.observe(document.body, {
