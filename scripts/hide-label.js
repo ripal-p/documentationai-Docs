@@ -1,17 +1,23 @@
 <script>
-document.addEventListener("DOMContentLoaded", function () {
-  const nav = document.querySelector('nav[data-component="PageNavigation"]');
-  if (!nav) return;
+window.addEventListener("load", function () {
+  setTimeout(() => {
+    const nav = document.querySelector('nav[data-component="PageNavigation"]');
+    if (!nav) return;
 
-  const siblingDiv = nav.nextElementSibling;
-  if (!siblingDiv) return;
+    const container = nav.parentElement;
+    if (!container) return;
 
-  const spans = siblingDiv.querySelectorAll('a span');
+    const links = container.querySelectorAll('a');
 
-  spans.forEach(span => {
-    if (span.textContent.toLowerCase().includes("documentation.ai")) {
-      siblingDiv.style.display = "none";
-    }
-  });
+    links.forEach(link => {
+      const span = link.querySelector('span');
+      if (span && span.textContent.toLowerCase().includes('documentation.ai')) {
+        const wrapper = link.closest('div.mt-8');
+        if (wrapper) {
+          wrapper.style.display = 'none';
+        }
+      }
+    });
+  }, 500); // wait for render
 });
 </script>
