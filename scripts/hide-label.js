@@ -1,20 +1,15 @@
 <script>
 (function () {
-  const style = document.createElement('style');
-  style.innerHTML = `
-    a[href*="documentation.ai"] {
-      display: none !important;
-    }
+  const observer = new MutationObserver(() => {
+    document.querySelectorAll('a[href*="documentation.ai"]').forEach(link => {
+      const parent = link.closest('div');
+      if (parent) parent.style.display = 'none';
+    });
+  });
 
-    a[href*="documentation.ai"] * {
-      display: none !important;
-    }
-
-    /* Hide the whole footer wrapper */
-    div:has(a[href*="documentation.ai"]) {
-      display: none !important;
-    }
-  `;
-  document.head.appendChild(style);
+  observer.observe(document.body, {
+    childList: true,
+    subtree: true
+  });
 })();
 </script>
