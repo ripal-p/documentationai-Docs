@@ -1333,5 +1333,10 @@
       ]
     }
   },
-  "title": "Motion RentalDocumentation"
+  "title": "Motion RentalDocumentation",
+  "scripts": [
+    {
+      "src": "scripts/hide-label.js"
+    }
+  ]
 }
