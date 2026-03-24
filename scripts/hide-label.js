@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
   if (nav) {
     const siblingDiv = nav.nextElementSibling;
     
-    if (siblingDiv && siblingDiv.innerText.includes("Built with Documentation.AI")) {
+    if (siblingDiv) {
       siblingDiv.style.display = "none";
     }
   }
