@@ -92,7 +92,7 @@
                     "icon": "undo-2"
                   },
                   {
-                    "title": "Return Checklist",
+                    "title": "Return checklist",
                     "path": "en/return-checklist",
                     "icon": "check-square"
                   }
@@ -796,7 +796,7 @@
                     "icon": "undo-2"
                   },
                   {
-                    "title": "Rückgabe-Checkliste",
+                    "title": "Rückgabe-checkliste",
                     "path": "de/return-checklist",
                     "icon": "check-square"
                   }
