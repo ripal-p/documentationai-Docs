@@ -85,6 +85,16 @@
                     "title": "Documents",
                     "path": "en/documents",
                     "icon": "paperclip-icon"
+                  },
+                  {
+                    "title": "Returns",
+                    "path": "en/returns",
+                    "icon": "undo-2"
+                  },
+                  {
+                    "title": "Return Checklist",
+                    "path": "en/return-checklist",
+                    "icon": "check-square"
                   }
                 ],
                 "icon": "album-icon"
@@ -275,6 +285,11 @@
                     "title": "Documents",
                     "path": "fr/documents",
                     "icon": "paperclip-icon"
+                  },
+                  {
+                    "title": "Retour du véhicule",
+                    "path": "fr/returns",
+                    "icon": "undo-2"
                   }
                 ]
               },
@@ -433,6 +448,11 @@
                     "title": "दस्तावेज़",
                     "path": "hi/documents",
                     "icon": "paperclip-icon"
+                  },
+                  {
+                    "title": "वाहन लौटाना",
+                    "path": "hi/returns",
+                    "icon": "undo-2"
                   }
                 ]
               },
@@ -591,6 +611,11 @@
                     "title": "Documentos de alquiler",
                     "path": "es/documents",
                     "icon": "paperclip-icon"
+                  },
+                  {
+                    "title": "Devoluciones",
+                    "path": "es/returns",
+                    "icon": "undo-2"
                   }
                 ]
               },
@@ -749,6 +774,11 @@
                     "title": "Documents",
                     "path": "de/documents",
                     "icon": "paperclip-icon"
+                  },
+                  {
+                    "title": "Rückgabe",
+                    "path": "de/returns",
+                    "icon": "undo-2"
                   }
                 ]
               },
@@ -907,6 +937,11 @@
                     "title": "Documents",
                     "path": "it/documents",
                     "icon": "paperclip-icon"
+                  },
+                  {
+                    "title": "Restituzione del veicolo",
+                    "path": "it/returns",
+                    "icon": "undo-2"
                   }
                 ]
               },
@@ -1065,6 +1100,11 @@
                     "title": "Documents",
                     "path": "pt/documents",
                     "icon": "paperclip-icon"
+                  },
+                  {
+                    "title": "Devoluções",
+                    "path": "pt/returns",
+                    "icon": "undo-2"
                   }
                 ]
               },
@@ -1223,6 +1263,11 @@
                     "title": "Documents",
                     "path": "zh-tw/documents",
                     "icon": "paperclip-icon"
+                  },
+                  {
+                    "title": "還車",
+                    "path": "zh-tw/returns",
+                    "icon": "undo-2"
                   }
                 ]
               },
