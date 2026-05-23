@@ -290,6 +290,11 @@
                     "title": "Retour du véhicule",
                     "path": "fr/returns",
                     "icon": "undo-2"
+                  },
+                  {
+                    "title": "Checklist de retour",
+                    "path": "fr/return-checklist",
+                    "icon": "check-square"
                   }
                 ]
               },
@@ -453,6 +458,11 @@
                     "title": "वाहन लौटाना",
                     "path": "hi/returns",
                     "icon": "undo-2"
+                  },
+                  {
+                    "title": "रिटर्न चेकलिस्ट",
+                    "path": "hi/return-checklist",
+                    "icon": "check-square"
                   }
                 ]
               },
@@ -616,6 +626,11 @@
                     "title": "Devoluciones",
                     "path": "es/returns",
                     "icon": "undo-2"
+                  },
+                  {
+                    "title": "Checklist de devolución",
+                    "path": "es/return-checklist",
+                    "icon": "check-square"
                   }
                 ]
               },
@@ -779,6 +794,11 @@
                     "title": "Rückgabe",
                     "path": "de/returns",
                     "icon": "undo-2"
+                  },
+                  {
+                    "title": "Rückgabe-Checkliste",
+                    "path": "de/return-checklist",
+                    "icon": "check-square"
                   }
                 ]
               },
@@ -942,6 +962,11 @@
                     "title": "Restituzione del veicolo",
                     "path": "it/returns",
                     "icon": "undo-2"
+                  },
+                  {
+                    "title": "Checklist di restituzione",
+                    "path": "it/return-checklist",
+                    "icon": "check-square"
                   }
                 ]
               },
@@ -1105,6 +1130,11 @@
                     "title": "Devoluções",
                     "path": "pt/returns",
                     "icon": "undo-2"
+                  },
+                  {
+                    "title": "Checklist de devolução",
+                    "path": "pt/return-checklist",
+                    "icon": "check-square"
                   }
                 ]
               },
@@ -1268,6 +1298,11 @@
                     "title": "還車",
                     "path": "zh-tw/returns",
                     "icon": "undo-2"
+                  },
+                  {
+                    "title": "還車檢查清單",
+                    "path": "zh-tw/return-checklist",
+                    "icon": "check-square"
                   }
                 ]
               },
