@@ -1,31 +1,27 @@
 <script>
 (function () {
-  function removeBranding() {
-    const link = document.querySelector('a[href*="documentation.ai"]');
-    if (!link) return false;
+    const blockedHref = "https://documentation.ai/?utm_campaign=footer&utm_medium=referral&utm_source=motion-rental";
 
-    // This is the correct wrapper based on your HTML
-    const footer = link.closest('div[class*="mt-8"]');
-
-    if (footer) {
-      footer.remove();
-      return true;
+    function removeElement() {
+        document.querySelectorAll('a[href*="documentation.ai"]').forEach(el => {
+            el.remove();
+        });
     }
 
-    // fallback: remove a few levels up
-    let el = link;
-    for (let i = 0; i < 4; i++) {
-      if (!el.parentElement) break;
-      el = el.parentElement;
-    }
-    el.remove();
-    return true;
-  }
+    // Run immediately
+    removeElement();
 
-  // Keep trying until it succeeds
-  const interval = setInterval(() => {
-    const done = removeBranding();
-    if (done) clearInterval(interval);
-  }, 200);
+    // Observe future DOM changes
+    const observer = new MutationObserver(() => {
+        removeElement();
+    });
+
+    observer.observe(document.documentElement, {
+        childList: true,
+        subtree: true
+    });
+
+    // Extra protection after full load
+    window.addEventListener("load", removeElement);
 })();
 </script>
