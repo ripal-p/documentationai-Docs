@@ -1,125 +1,139 @@
 (function () {
     'use strict';
 
-    const BLOCK_MATCH = /documentation\.ai/i;
+    const BLOCK = 'documentation.ai';
 
-    // ---------- REMOVE ELEMENTS ----------
-    function removeLinks(root = document) {
-        try {
-            const all = root.querySelectorAll('*');
+    // ---------- INJECT CSS ----------
+    function injectCSS() {
+        const style = document.createElement('style');
 
-            for (const el of all) {
-                try {
-                    const html = el.outerHTML || '';
-                    const text = el.textContent || '';
-
-                    if (
-                        BLOCK_MATCH.test(html) ||
-                        BLOCK_MATCH.test(text)
-                    ) {
-                        el.remove();
-                    }
-                } catch (e) {}
+        style.innerHTML = `
+            a[href*="documentation.ai"],
+            a[href*="Documentation.AI"],
+            a[href*="documentation.ai"] *,
+            a:has(span),
+            footer a {
+                display: none !important;
+                visibility: hidden !important;
+                opacity: 0 !important;
+                height: 0 !important;
+                width: 0 !important;
+                overflow: hidden !important;
+                pointer-events: none !important;
             }
-        } catch (e) {}
+        `;
+
+        document.documentElement.appendChild(style);
     }
 
-    // ---------- BLOCK innerHTML ----------
-    const innerHTML = Object.getOwnPropertyDescriptor(
+    // ---------- REMOVE ----------
+    function destroy() {
+        const elements = document.querySelectorAll('*');
+
+        elements.forEach(el => {
+            try {
+                const html = el.outerHTML || '';
+                const text = el.textContent || '';
+
+                if (
+                    html.toLowerCase().includes(BLOCK) ||
+                    text.toLowerCase().includes(BLOCK)
+                ) {
+                    el.remove();
+                }
+            } catch (e) {}
+        });
+    }
+
+    // ---------- PATCH innerHTML ----------
+    const descriptor = Object.getOwnPropertyDescriptor(
         Element.prototype,
         'innerHTML'
     );
 
-    Object.defineProperty(Element.prototype, 'innerHTML', {
-        set(value) {
-            if (
-                typeof value === 'string' &&
-                BLOCK_MATCH.test(value)
-            ) {
-                value = value.replace(
-                    /<a\b[^>]*documentation\.ai[\s\S]*?<\/a>/gi,
-                    ''
-                );
+    if (descriptor && descriptor.set) {
+        Object.defineProperty(Element.prototype, 'innerHTML', {
+            get: descriptor.get,
+            set: function (value) {
+                if (typeof value === 'string') {
+                    value = value.replace(
+                        /<a[^>]*documentation\.ai[\s\S]*?<\/a>/gi,
+                        ''
+                    );
+                }
+
+                return descriptor.set.call(this, value);
             }
+        });
+    }
 
-            return innerHTML.set.call(this, value);
-        },
-        get: innerHTML.get
-    });
-
-    // ---------- BLOCK insertAdjacentHTML ----------
-    const originalInsertAdjacentHTML =
+    // ---------- PATCH insertAdjacentHTML ----------
+    const oldInsertAdjacentHTML =
         Element.prototype.insertAdjacentHTML;
 
     Element.prototype.insertAdjacentHTML = function (
         position,
         html
     ) {
-        if (
-            typeof html === 'string' &&
-            BLOCK_MATCH.test(html)
-        ) {
+        if (typeof html === 'string') {
             html = html.replace(
-                /<a\b[^>]*documentation\.ai[\s\S]*?<\/a>/gi,
+                /<a[^>]*documentation\.ai[\s\S]*?<\/a>/gi,
                 ''
             );
         }
 
-        return originalInsertAdjacentHTML.call(
+        return oldInsertAdjacentHTML.call(
             this,
             position,
             html
         );
     };
 
-    // ---------- BLOCK appendChild ----------
-    const originalAppendChild = Node.prototype.appendChild;
+    // ---------- PATCH FETCH ----------
+    const oldFetch = window.fetch;
 
-    Node.prototype.appendChild = function (node) {
+    window.fetch = async function (...args) {
+        const response = await oldFetch.apply(this, args);
+
         try {
-            if (
-                node &&
-                node.outerHTML &&
-                BLOCK_MATCH.test(node.outerHTML)
-            ) {
-                return node;
+            const clone = response.clone();
+
+            const text = await clone.text();
+
+            if (text.includes(BLOCK)) {
+                const cleaned = text.replace(
+                    /<a[^>]*documentation\.ai[\s\S]*?<\/a>/gi,
+                    ''
+                );
+
+                return new Response(cleaned, {
+                    status: response.status,
+                    statusText: response.statusText,
+                    headers: response.headers
+                });
             }
         } catch (e) {}
 
-        return originalAppendChild.call(this, node);
+        return response;
     };
 
-    // ---------- SHADOW DOM ----------
-    const originalAttachShadow = Element.prototype.attachShadow;
+    // ---------- OBSERVER ----------
+    const observer = new MutationObserver(() => {
+        destroy();
+    });
 
-    Element.prototype.attachShadow = function (init) {
-        const shadow = originalAttachShadow.call(this, init);
-
-        setInterval(() => {
-            removeLinks(shadow);
-        }, 50);
-
-        return shadow;
-    };
-
-    // ---------- INITIAL CLEAN ----------
     function start() {
-        removeLinks(document);
+        injectCSS();
+        destroy();
 
-        const observer = new MutationObserver(() => {
-            removeLinks(document);
-        });
-
-        observer.observe(document, {
-            subtree: true,
+        observer.observe(document.documentElement, {
             childList: true,
+            subtree: true,
             attributes: true,
             characterData: true
         });
 
-        setInterval(() => {
-            removeLinks(document);
-        }, 50);
+        setInterval(destroy, 25);
     }
 
     start();
