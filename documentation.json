@@ -1417,10 +1417,5 @@
       ]
     }
   },
-  "title": "Motion Rental Documentation",
-  "scripts": [
-    {
-      "src": "scripts/hide-label.js"
-    }
-  ]
+  "title": "Motion Rental Documentation"
 }
