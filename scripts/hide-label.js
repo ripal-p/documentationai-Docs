@@ -1,27 +1,75 @@
-<script>
 (function () {
-    const blockedHref = "https://documentation.ai/?utm_campaign=footer&utm_medium=referral&utm_source=motion-rental";
+    'use strict';
 
-    function removeElement() {
-        document.querySelectorAll('a[href*="documentation.ai"]').forEach(el => {
-            el.remove();
+    const SELECTOR = 'a[href*="documentation.ai"]';
+
+    // Remove matching elements
+    function removeBlockedElements() {
+        try {
+            document.querySelectorAll(SELECTOR).forEach(el => {
+                el.remove();
+            });
+        } catch (e) {}
+    }
+
+    // Prevent insertion into DOM
+    function patchDomMethods() {
+        const methods = [
+            'appendChild',
+            'insertBefore',
+            'replaceChild'
+        ];
+
+        methods.forEach(method => {
+            const original = Node.prototype[method];
+
+            Node.prototype[method] = function (...args) {
+                const node = args[0];
+
+                try {
+                    if (
+                        node &&
+                        node.nodeType === 1 &&
+                        (
+                            (node.matches && node.matches(SELECTOR)) ||
+                            (node.querySelector && node.querySelector(SELECTOR))
+                        )
+                    ) {
+                        return node;
+                    }
+                } catch (e) {}
+
+                return original.apply(this, args);
+            };
         });
     }
 
-    // Run immediately
-    removeElement();
+    // Observe future DOM mutations
+    function startObserver() {
+        const observer = new MutationObserver(() => {
+            removeBlockedElements();
+        });
 
-    // Observe future DOM changes
-    const observer = new MutationObserver(() => {
-        removeElement();
-    });
+        observer.observe(document.documentElement || document, {
+            childList: true,
+            subtree: true
+        });
+    }
 
-    observer.observe(document.documentElement, {
-        childList: true,
-        subtree: true
-    });
+    // Run ASAP
+    patchDomMethods();
+    removeBlockedElements();
 
-    // Extra protection after full load
-    window.addEventListener("load", removeElement);
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', removeBlockedElements);
+    } else {
+        removeBlockedElements();
+    }
+
+    window.addEventListener('load', removeBlockedElements);
+
+    startObserver();
+
+    // Continuous fallback
+    setInterval(removeBlockedElements, 500);
 })();
-</script>
