@@ -1,75 +1,93 @@
 (function () {
     'use strict';
 
-    const SELECTOR = 'a[href*="documentation.ai"]';
+    const BLOCK_TEXT = 'Documentation.AI';
+    const BLOCK_DOMAIN = 'documentation.ai';
 
-    // Remove matching elements
-    function removeBlockedElements() {
-        try {
-            document.querySelectorAll(SELECTOR).forEach(el => {
-                el.remove();
-            });
-        } catch (e) {}
+    function kill() {
+        const links = document.getElementsByTagName('a');
+
+        for (let i = links.length - 1; i >= 0; i--) {
+            const el = links[i];
+
+            const href = (el.getAttribute('href') || '').toLowerCase();
+            const text = (el.textContent || '').toLowerCase();
+
+            if (
+                href.includes(BLOCK_DOMAIN) ||
+                text.includes(BLOCK_TEXT.toLowerCase())
+            ) {
+                // destroy visually
+                el.style.setProperty('display', 'none', 'important');
+                el.style.setProperty('visibility', 'hidden', 'important');
+                el.style.setProperty('opacity', '0', 'important');
+                el.style.setProperty('height', '0', 'important');
+                el.style.setProperty('width', '0', 'important');
+                el.style.setProperty('pointer-events', 'none', 'important');
+
+                // remove completely
+                if (el.parentNode) {
+                    el.parentNode.removeChild(el);
+                }
+            }
+        }
     }
 
-    // Prevent insertion into DOM
-    function patchDomMethods() {
-        const methods = [
-            'appendChild',
-            'insertBefore',
-            'replaceChild'
-        ];
+    // Hijack DOM insertion methods
+    const methods = [
+        'appendChild',
+        'insertBefore',
+        'replaceChild'
+    ];
 
-        methods.forEach(method => {
-            const original = Node.prototype[method];
+    methods.forEach(method => {
+        const original = Node.prototype[method];
 
-            Node.prototype[method] = function (...args) {
-                const node = args[0];
+        Node.prototype[method] = function () {
+            const node = arguments[0];
 
-                try {
+            try {
+                if (node && node.tagName === 'A') {
+                    const href = (node.getAttribute('href') || '').toLowerCase();
+                    const text = (node.textContent || '').toLowerCase();
+
                     if (
-                        node &&
-                        node.nodeType === 1 &&
-                        (
-                            (node.matches && node.matches(SELECTOR)) ||
-                            (node.querySelector && node.querySelector(SELECTOR))
-                        )
+                        href.includes(BLOCK_DOMAIN) ||
+                        text.includes(BLOCK_TEXT.toLowerCase())
                     ) {
                         return node;
                     }
-                } catch (e) {}
+                }
+            } catch (e) {}
 
-                return original.apply(this, args);
-            };
-        });
-    }
+            return original.apply(this, arguments);
+        };
+    });
 
-    // Observe future DOM mutations
-    function startObserver() {
-        const observer = new MutationObserver(() => {
-            removeBlockedElements();
-        });
+    // Observe ALL DOM mutations
+    const observer = new MutationObserver(() => {
+        kill();
+    });
 
-        observer.observe(document.documentElement || document, {
+    function start() {
+        kill();
+
+        observer.observe(document.documentElement, {
             childList: true,
-            subtree: true
+            subtree: true,
+            attributes: true,
+            characterData: true
         });
+
+        // brutal fallback
+        setInterval(kill, 50);
     }
 
-    // Run ASAP
-    patchDomMethods();
-    removeBlockedElements();
-
-    if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', removeBlockedElements);
+    // Start immediately
+    if (document.documentElement) {
+        start();
     } else {
-        removeBlockedElements();
+        window.addEventListener('DOMContentLoaded', start);
     }
 
-    window.addEventListener('load', removeBlockedElements);
-
-    startObserver();
-
-    // Continuous fallback
-    setInterval(removeBlockedElements, 500);
 })();
