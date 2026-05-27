@@ -1407,12 +1407,12 @@
       },
       "links": [
         {
-          "title": "Visit website",
-          "link": "https://motionrental.com.au"
-        },
-        {
           "title": "Links",
           "link": "https://motionrental.com.au/links"
+        },
+        {
+          "title": "Visit website",
+          "link": "https://motionrental.com.au/"
         }
       ]
     }
