@@ -95,6 +95,11 @@
                     "title": "Return checklist",
                     "path": "en/return-checklist",
                     "icon": "check-square"
+                  },
+                  {
+                    "title": "Unlimited KMs",
+                    "path": "en/unlimited-kms",
+                    "icon": "lucide-infinity"
                   }
                 ],
                 "icon": "album-icon"
@@ -295,6 +300,11 @@
                     "title": "Checklist de retour",
                     "path": "fr/return-checklist",
                     "icon": "check-square"
+                  },
+                  {
+                    "title": "Kilomètres illimités",
+                    "path": "fr/unlimited-kms",
+                    "icon": "lucide-infinity"
                   }
                 ]
               },
@@ -463,6 +473,11 @@
                     "title": "रिटर्न चेकलिस्ट",
                     "path": "hi/return-checklist",
                     "icon": "check-square"
+                  },
+                  {
+                    "title": "असीमित किलोमीटर",
+                    "path": "hi/unlimited-kms",
+                    "icon": "lucide-infinity"
                   }
                 ]
               },
@@ -631,6 +646,11 @@
                     "title": "Checklist de devolución",
                     "path": "es/return-checklist",
                     "icon": "check-square"
+                  },
+                  {
+                    "title": "Kilómetros ilimitados",
+                    "path": "es/unlimited-kms",
+                    "icon": "lucide-infinity"
                   }
                 ]
               },
@@ -799,6 +819,11 @@
                     "title": "Rückgabe-checkliste",
                     "path": "de/return-checklist",
                     "icon": "check-square"
+                  },
+                  {
+                    "title": "Unbegrenzte Kilometer",
+                    "path": "de/unlimited-kms",
+                    "icon": "lucide-infinity"
                   }
                 ]
               },
@@ -967,6 +992,11 @@
                     "title": "Checklist di restituzione",
                     "path": "it/return-checklist",
                     "icon": "check-square"
+                  },
+                  {
+                    "title": "Chilometri illimitati",
+                    "path": "it/unlimited-kms",
+                    "icon": "lucide-infinity"
                   }
                 ]
               },
@@ -1135,6 +1165,11 @@
                     "title": "Checklist de devolução",
                     "path": "pt/return-checklist",
                     "icon": "check-square"
+                  },
+                  {
+                    "title": "Quilómetros ilimitados",
+                    "path": "pt/unlimited-kms",
+                    "icon": "lucide-infinity"
                   }
                 ]
               },
@@ -1303,6 +1338,11 @@
                     "title": "還車檢查清單",
                     "path": "zh-tw/return-checklist",
                     "icon": "check-square"
+                  },
+                  {
+                    "title": "無限公里數",
+                    "path": "zh-tw/unlimited-kms",
+                    "icon": "lucide-infinity"
                   }
                 ]
               },
