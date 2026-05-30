@@ -1460,8 +1460,8 @@
   "title": "Motion Rental Documentation",
   "redirects": [
     {
-      "source": "/docs/rentals-addons-extras",
-      "destination": "/docs/en/addons-extras"
+      "source": "/rentals-addons-extras",
+      "destination": "/en/addons-extras"
     },
     {
       "source": "/docs/rentals-quad-lock-phone-mounting-system",
