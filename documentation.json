@@ -1496,8 +1496,8 @@
       "destination": "/docs/en/returns"
     },
     {
-      "source": "/docs/get-started",
-      "destination": "/docs/en/get-started"
+      "source": "/get-started",
+      "destination": "/en/get-started"
     },
     {
       "source": "/docs/rentals-return-checklist",
