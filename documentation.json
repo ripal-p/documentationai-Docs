@@ -1457,5 +1457,51 @@
       ]
     }
   },
-  "title": "Motion Rental Documentation"
+  "title": "Motion Rental Documentation",
+  "redirects": [
+    {
+      "source": "/docs/rentals-addons-extras",
+      "destination": "/docs/en/addons-extras"
+    },
+    {
+      "source": "/docs/rentals-quad-lock-phone-mounting-system",
+      "destination": "/docs/en/addons-extras"
+    },
+    {
+      "source": "/docs/documents-proof-of-identity",
+      "destination": "/docs/en/proof-of-identity"
+    },
+    {
+      "source": "/docs/rentals-documents",
+      "destination": "/docs/en/documents"
+    },
+    {
+      "source": "/docs/rentals-helmets",
+      "destination": "/docs/en/helmet"
+    },
+    {
+      "source": "/docs/rentals-food-delivery-bag",
+      "destination": "/docs/en/food-delivery-bag"
+    },
+    {
+      "source": "/docs/rentals-insurance",
+      "destination": "/docs/en/insurance"
+    },
+    {
+      "source": "/docs/partner-program-details",
+      "destination": "/docs/en/partner-program"
+    },
+    {
+      "source": "/docs/rentals-return-vehicle",
+      "destination": "/docs/en/returns"
+    },
+    {
+      "source": "/docs/get-started",
+      "destination": "/docs/en/get-started"
+    },
+    {
+      "source": "/docs/rentals-return-checklist",
+      "destination": "/en/return-checklist"
+    }
+  ]
 }
