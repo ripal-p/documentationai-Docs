@@ -1462,6 +1462,14 @@
     {
       "source": "/test-redirect",
       "destination": "/en/get-started"
+    },
+    {
+      "source": "/redirect-test",
+      "destination": "/docs/en/get-started"
+    },
+    {
+      "source": "/docs/direct-test",
+      "destination": "/en/get-started"
     }
   ]
 }
