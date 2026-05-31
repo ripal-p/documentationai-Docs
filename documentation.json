@@ -1470,6 +1470,18 @@
     {
       "source": "/docs/direct-test",
       "destination": "/en/get-started"
+    },
+    {
+      "source": "/docs/rect-test",
+      "destination": "/docs/en/get-started"
+    },
+    {
+      "source": "/ct-test",
+      "destination": "/en-get-started"
+    },
+    {
+      "source": "/test",
+      "destination": "/docs/en-get-started"
     }
   ]
 }
