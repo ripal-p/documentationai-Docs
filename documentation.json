@@ -1477,11 +1477,13 @@
     },
     {
       "source": "/ct-test",
-      "destination": "/en/get-started"
+      "destination": "/en/get-started",
+      "statusCode": 301
     },
     {
       "source": "/test",
-      "destination": "/docs/en/get-started"
+      "destination": "/docs/en/get-started",
+      "statusCode": 301
     }
   ]
 }
