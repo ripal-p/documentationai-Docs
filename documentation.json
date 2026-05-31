@@ -1461,7 +1461,7 @@
   "redirects": [
     {
       "source": "/test-redirect",
-      "destination": "/docs/en/get-started"
+      "destination": "/en/get-started"
     }
   ]
 }
