@@ -1462,28 +1462,6 @@
     {
       "source": "/test-redirect",
       "destination": "/en/get-started"
-    },
-    {
-      "source": "/redirect-test",
-      "destination": "/docs/en/get-started"
-    },
-    {
-      "source": "/docs/direct-test",
-      "destination": "/en/get-started"
-    },
-    {
-      "source": "/docs/rect-test",
-      "destination": "/docs/en/get-started"
-    },
-    {
-      "source": "/ct-test",
-      "destination": "/en/get-started",
-      "statusCode": 301
-    },
-    {
-      "source": "/test",
-      "destination": "/docs/en/get-started",
-      "statusCode": 301
     }
   ]
 }
