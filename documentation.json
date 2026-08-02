@@ -113,6 +113,12 @@
                     "icon": "lucide-refresh-ccw"
                   },
                   {
+                    "title": "Pay via PayID (Email)",
+                    "path": "pay-via-payid-email",
+                    "icon": "at-sign",
+                    "badge": "New"
+                  },
+                  {
                     "title": "Pay via PayID (ABN)",
                     "path": "en/pay-via-payid-abn",
                     "icon": "lucide-dollar-sign"
