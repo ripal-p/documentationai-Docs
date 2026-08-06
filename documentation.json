@@ -113,8 +113,8 @@
                     "icon": "lucide-refresh-ccw"
                   },
                   {
-                    "title": "Pay via PayID (Email)",
-                    "path": "pay-via-payid-email",
+                    "title": "Direct debit (PayID via Email)",
+                    "path": "direct-debit",
                     "icon": "at-sign",
                     "badge": "New"
                   },
