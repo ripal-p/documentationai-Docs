@@ -72,11 +72,6 @@
                     "icon": "hard-hat"
                   },
                   {
-                    "title": "Roadside assistance",
-                    "path": "en/roadside-assistance",
-                    "icon": "shield-user"
-                  },
-                  {
                     "title": "Food delivery bag",
                     "path": "en/food-delivery-bag",
                     "icon": "lucide-shopping-bag"
@@ -95,6 +90,11 @@
                     "title": "Return checklist",
                     "path": "en/return-checklist",
                     "icon": "check-square"
+                  },
+                  {
+                    "title": "Roadside assistance",
+                    "path": "en/roadside-assistance",
+                    "icon": "shield-user"
                   },
                   {
                     "title": "Unlimited KMs",
