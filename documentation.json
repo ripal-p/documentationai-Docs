@@ -130,6 +130,12 @@
                 "group": "Vehicle & Maintenance",
                 "pages": [
                   {
+                    "title": "Home service",
+                    "path": "home-service",
+                    "icon": "lucide-wrench",
+                    "badge": "New"
+                  },
+                  {
                     "title": "Flat tyre",
                     "path": "en/flat-tyre",
                     "icon": "loader-pinwheel"
