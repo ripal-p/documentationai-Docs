@@ -21,6 +21,11 @@
                 overflow: hidden !important;
                 pointer-events: none !important;
             }
+
+            table {
+                width: 100% !important;
+                display: table !important;
+            }
         `;
 
         document.documentElement.appendChild(style);

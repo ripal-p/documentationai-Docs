@@ -62,6 +62,12 @@
                     "icon": "lucide-puzzle"
                   },
                   {
+                    "title": "Charges & Fees",
+                    "path": "charges-fees",
+                    "icon": "banknote-icon",
+                    "badge": "New"
+                  },
+                  {
                     "title": "Insurance",
                     "path": "en/insurance",
                     "icon": "shield-check"
