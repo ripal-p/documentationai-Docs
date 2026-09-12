@@ -121,8 +121,7 @@
                   {
                     "title": "Direct debit (PayID via Email)",
                     "path": "direct-debit",
-                    "icon": "at-sign",
-                    "badge": "New"
+                    "icon": "at-sign"
                   },
                   {
                     "title": "Pay via PayID (ABN)",
@@ -138,8 +137,7 @@
                   {
                     "title": "Home service",
                     "path": "home-service",
-                    "icon": "lucide-wrench",
-                    "badge": "New"
+                    "icon": "lucide-wrench"
                   },
                   {
                     "title": "Flat tyre",
