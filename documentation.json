@@ -63,7 +63,7 @@
                   },
                   {
                     "title": "Charges & fees",
-                    "path": "charges-fees",
+                    "path": "en/charges-fees",
                     "icon": "banknote-icon",
                     "badge": "New"
                   },
@@ -120,7 +120,7 @@
                   },
                   {
                     "title": "Direct debit (PayID via Email)",
-                    "path": "direct-debit",
+                    "path": "en/direct-debit",
                     "icon": "at-sign"
                   },
                   {
@@ -136,7 +136,7 @@
                 "pages": [
                   {
                     "title": "Home service",
-                    "path": "home-service",
+                    "path": "en/home-service",
                     "icon": "lucide-wrench"
                   },
                   {
