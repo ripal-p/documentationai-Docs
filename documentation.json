@@ -64,8 +64,7 @@
                   {
                     "title": "Charges & fees",
                     "path": "en/charges-fees",
-                    "icon": "banknote-icon",
-                    "badge": "New"
+                    "icon": "banknote-icon"
                   },
                   {
                     "title": "Insurance",
@@ -1571,5 +1570,8 @@
       "source": "/vehicles-tyre-size",
       "destination": "/en/tyre-size"
     }
-  ]
+  ],
+  "search": {
+    "strict-dimensions": false
+  }
 }
