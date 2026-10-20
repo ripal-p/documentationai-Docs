@@ -1,5 +1,6 @@
 {
-  "name": "Motion Rental Documentation",
+  "name": "Motion Rental | Documentation",
+  "description": "Motion Rental's customer support documentation for motorcycle and scooter rentals in Brisbane, Australia. Find guides on rentals, insurance, payments, maintenance, licence requirements and more.",
   "colors": {
     "light": {
       "brand": "#a3cc00",
@@ -1472,7 +1473,7 @@
       ]
     }
   },
-  "title": "Motion Rental Documentation",
+  "title": "Motion Rental | Documentation",
   "redirects": [
     {
       "source": "/rentals-addons-extras",
