@@ -171,9 +171,10 @@
                 "group": "License",
                 "pages": [
                   {
-                    "title": "How to get CRN",
-                    "path": "how-to-get-crn",
-                    "icon": "id-card"
+                    "title": "Get your CRN",
+                    "path": "get-your-tmr-crn",
+                    "icon": "id-card",
+                    "badge": "New"
                   },
                   {
                     "title": "QLD motorcycle license",
